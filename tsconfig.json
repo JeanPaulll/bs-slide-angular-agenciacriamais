@@ -16,6 +16,14 @@
     "lib": [
       "es2017",
       "dom"
-    ]
+    ],
+    "paths": {
+      "BsSlideAngularAgenciaCriaMais": [
+        "dist/bs-slide-angular-agencia-cria-mais"
+      ],
+      "BsSlideAngularAgenciaCriaMais/*": [
+        "dist/bs-slide-angular-agencia-cria-mais/*"
+      ]
+    }
   }
 }

@@ -7,7 +7,7 @@
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
-      "prefix": "app",
+      "prefix": "bs-slide-agcm",
       "schematics": {},
       "architect": {
         "build": {
@@ -115,6 +115,41 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": "e2e/tsconfig.e2e.json",
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "BsSlideAngularAgenciaCriaMais": {
+      "root": "projects/bs-slide-angular-agencia-cria-mais",
+      "sourceRoot": "projects/bs-slide-angular-agencia-cria-mais/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/bs-slide-angular-agencia-cria-mais/tsconfig.lib.json",
+            "project": "projects/bs-slide-angular-agencia-cria-mais/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/bs-slide-angular-agencia-cria-mais/src/test.ts",
+            "tsConfig": "projects/bs-slide-angular-agencia-cria-mais/tsconfig.spec.json",
+            "karmaConfig": "projects/bs-slide-angular-agencia-cria-mais/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/bs-slide-angular-agencia-cria-mais/tsconfig.lib.json",
+              "projects/bs-slide-angular-agencia-cria-mais/tsconfig.spec.json"
+            ],
             "exclude": [
               "**/node_modules/**"
             ]
