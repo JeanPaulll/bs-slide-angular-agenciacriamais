@@ -1,27 +1,80 @@
-# BsSlideAngularAgenciacriamais
+# Bs Slide Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.3.
+[![GitHub top language](https://img.shields.io/github/languages/top/JeanPaulll/bs-slide-angular-agenciacriamais.svg)]()
+[![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/JeanPaulll/bs-slide-angular-agenciacriamais.svg)]()
+[![GitHub issues](https://img.shields.io/github/issues/JeanPaulll/bs-slide-angular-agenciacriamais.svg)]()
+[![GitHub closed issues](https://img.shields.io/github/issues-closed/JeanPaulll/bs-slide-angular-agenciacriamais.svg)]()
+[![GitHub contributors](https://img.shields.io/github/contributors/JeanPaulll/bs-slide-angular-agenciacriamais.svg)]()
+[![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/JeanPaulll/bs-slide-angular-agenciacriamais)
+![npm](https://img.shields.io/npm/v/bs-slide-angular-agencia-cria-mais.svg)
+[![Website](https://img.shields.io/website-up-down-green-red/http/shields.io.svg?label=agenciacriamais)](http://www.agenciacriamais.com.br)
 
-## Development server
+`bs-slide-agular` é um componente de slideshow leve para aplicativos Anguar 6x e totalmente configurável.
+## Características
+* Reprodução automática
+* Botões de navegação
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Exemplo
 
-## Code scaffolding
+* [demo](https://JeanPaulll.github.io/bs-slide-angular-agenciacriamais/)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Instalação
+OS X & Linux:
+````
+npm i bs-slide-angular-agencia-cria-mais --save
+````
+Windows:
+````
+npm i bs-slide-angular-agencia-cria-mais --save
+````
+* `importe o BsSlideAngularAgenciaCriaMaisModule para o seu app.module;`
+`````
+@NgModule({
+  imports: [
+    ...,
+    BsSlideAngularAgenciaCriaMaisModule
+  ],
+  ...
+})
+class YourModule { ... }
+`````
+* use `<bs-slide-angular-agcm></bs-slide-angular-agcm>` em seus templates.
 
-## Build
+````
+<bs-slide-angular-agcm [slideImages]="slides" [config]="config"></bs-slide-angular-agcm>
+````
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Configuração
 
-## Running unit tests
+### @Input
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+* `slideImages: any[]` - Uma matriz de objetos que contém o URL e as legendas da imagem.
+* `config: {}` - Objeto com valores de configuração para os slides com o formato abaixo.
 
-## Running end-to-end tests
+````
+slideImages = [
+    {
+      image: '/assets/images/image3.jpeg', //caminho para a imagem
+      title: 'Legenda' //legenda para imagem
+    }
+]
+````
+````
+config = {
+        width:"800px", //width of slides defaults to 800px
+        height:"300px" //height of slides defaults to 300px
+        autoPlay:false //autoplay required or not defaults to false
+        delay: 3000 // delay for autoplay
+}
+````
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Ajude a melhorar
 
-## Further help
+Encontrou um bug ou um problema? [Open a new issue](https://github.com/JeanPaulll/bs-slide-angular-agenciacriamais/issues)  GitHub.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Contribuindo para este projeto
+[GitHub](https://github.com/JeanPaulll/bs-slide-angular-agenciacriamais)
+
+[![GitHub contributors](https://img.shields.io/github/contributors/JeanPaulll/bs-slide-angular-agenciacriamais.svg)]()
+

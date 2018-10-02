@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'bs-slide-angular-agencia-cria-mais',
+  selector: 'bs-slide-angular-agcm',
   template: `
     <p>
-      bs-slide-angular-agencia-cria-mais works! Teste
+      Teste Slide Principal
     </p>
   `,
   styles: []
