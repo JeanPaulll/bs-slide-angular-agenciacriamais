@@ -1,8 +1,32 @@
 {
   "name": "bs-slide-angular-agencia-cria-mais",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "peerDependencies": {
     "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
     "@angular/core": "^6.0.0-rc.0 || ^6.0.0"
+  },
+  "dependencies": {
+    "owl.carousel": "^2.3.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JeanPaulll/bs-slide-angular-agenciacriamais.git"
+  },
+  "keywords": [
+    "bs-slide-angular",
+    "angular-slider",
+    "slider",
+    "slider-component",
+    "angular-component",
+    "angular6"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Jean Paul",
+    "email": "jeanpaulwebb@gmail.com",
+    "url": "http://www.agenciacriamais.com.br/"
+  },
+  "bugs": {
+    "url": "https://github.com/JeanPaulll/bs-slide-angular-agenciacriamais/issues"
   }
 }
