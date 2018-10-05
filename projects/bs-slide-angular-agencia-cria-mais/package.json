@@ -1,11 +1,9 @@
 {
   "name": "bs-slide-angular-agencia-cria-mais",
-  "version": "0.1.1",
+  "version": "0.1.5",
   "peerDependencies": {
     "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
-    "@angular/core": "^6.0.0-rc.0 || ^6.0.0"
-  },
-  "dependencies": {
+    "@angular/core": "^6.0.0-rc.0 || ^6.0.0",
     "owl.carousel": "^2.3.4"
   },
   "repository": {
@@ -29,6 +27,5 @@
   },
   "bugs": {
     "url": "https://github.com/JeanPaulll/bs-slide-angular-agenciacriamais/issues"
-  },
-  "devDependencies": {}
+  }
 }

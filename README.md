@@ -31,6 +31,21 @@ Windows:
 ````
 npm i bs-slide-angular-agencia-cria-mais --save
 ````
+
+### Dependências
+````
+npm i jquery --save
+````
+* `importe o jquery globalmente em seu app projeto;`
+* `angular.json` 
+`````sh
+...,
+"scripts": [
+   ...,
+  "node_modules/jquery/dist/jquery.min.js"
+]         
+`````
+
 * `importe o BsSlideAngularAgenciaCriaMaisModule para o seu app.module;`
 `````sh
 @NgModule({
@@ -42,10 +57,10 @@ npm i bs-slide-angular-agencia-cria-mais --save
 })
 class YourModule { ... }
 `````
-* use `<bs-slide-angular-agcm></bs-slide-angular-agcm>` em seus templates.
+* use ` <bs-slide-angular-agcm></bs-slide-angular-agcm>` em seus templates. 
 
 ```sh
-<bs-slide-angular-agcm [slideImages]="slides" [config]="config"></bs-slide-angular-agcm>
+<bs-slide-angular-agcm [slideImages]="slideImages" [options]="options"></bs-slide-angular-agcm>
 ````
 
 ## Configuração
@@ -53,24 +68,48 @@ class YourModule { ... }
 ### @Input
 
 * `slideImages: any[]` - Uma matriz de objetos que contém o URL e as legendas da imagem.
-* `config: {}` - Objeto com valores de configuração para os slides com o formato abaixo.
+* `options: {}` - Objeto com valores de configuração para os slides com o formato abaixo.
 
 ````
 slideImages = [
     {
       image: '/assets/images/image3.jpeg', //caminho para a imagem
-      title: 'Legenda' //legenda para imagem
+      title: 'Legenda' //legenda para imagem,
+      url: '#'
     }
 ]
 ````
 ````
-config = {
-        width:"800px", //width of slides defaults to 800px
-        height:"300px" //height of slides defaults to 300px
-        autoPlay:false //autoplay required or not defaults to false
-        delay: 3000 // delay for autoplay
-}
+Exemplo: 
+options = {
+       dots: true,
+       autoplay: true,
+       autoplayTimeout: 4000,
+       smartSpeed: 1200,
+       autoplayHoverPause: true,
+       lazyLoad: true,
+       loop: true,
+       nav: false,
+       items: 4
+       responsive: {
+           0: {
+               items: 1
+           },
+           500: {
+               items: 2
+           },
+           992: {
+               items: 3
+           },
+           1300: {
+               items: 4,
+               autoplay: true,
+           }
+       }
+   }
 ````
+### Documentação owCarousel2
+[owCarousel2](https://owlcarousel2.github.io/OwlCarousel2/)
 
 ## Ajude a melhorar
 
